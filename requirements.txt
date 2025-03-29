@@ -1,0 +1,5 @@
+PyAudio
+av
+scipy
+websocket-client
+loguru
