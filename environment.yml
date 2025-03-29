@@ -3,31 +3,30 @@ channels:
   - defaults
 dependencies:
   - blas=1.0=openblas
-  - bzip2=1.0.8=h80987f9_6
-  - ca-certificates=2025.2.25=hca03da5_0
-  - libcxx=14.0.6=h848a8c0_0
-  - libffi=3.4.4=hca03da5_1
-  - libgfortran=5.0.0=11_3_0_hca03da5_28
-  - libgfortran5=11.3.0=h009349e_28
-  - libopenblas=0.3.21=h269037a_0
-  - llvm-openmp=14.0.6=hc6e5704_0
-  - loguru=0.7.2=py311hca03da5_1
-  - ncurses=6.4=h313beb8_0
-  - numpy=2.0.1=py311he598dae_1
-  - numpy-base=2.0.1=py311hfbfe69c_1
-  - openssl=3.0.16=h02f6b3c_0
-  - pip=25.0=py311hca03da5_0
-  - python=3.11.11=hb885b13_0
-  - readline=8.2=h1a28f6b_0
-  - scipy=1.15.2=py311h14fe6a6_1
-  - setuptools=75.8.0=py311hca03da5_0
-  - sqlite=3.45.3=h80987f9_0
-  - tk=8.6.14=h6ba3021_0
-  - tzdata=2025a=h04d1e81_0
-  - websocket-client=1.8.0=py311hca03da5_0
-  - wheel=0.45.1=py311hca03da5_0
-  - xz=5.6.4=h80987f9_1
-  - zlib=1.2.13=h18a0788_1
+  - ca-certificates=2025.2.25
+  - libcxx=14.0.6
+  - libffi=3.4.4
+  - libgfortran=5.0.0
+  - libgfortran5=11.3.0
+  - libopenblas=0.3.21
+  - llvm-openmp=14.0.6
+  - loguru=0.7.2
+  - ncurses=6.4
+  - numpy=2.0.1
+  - numpy-base=2.0.1
+  - openssl=3.0.16
+  - pip=25.0
+  - python=3.11.11
+  - readline=8.2
+  - scipy=1.15.2
+  - setuptools=75.8.0
+  - sqlite=3.45.3
+  - tk=8.6.14
+  - tzdata=2025a
+  - websocket-client=1.8.0
+  - wheel=0.45.1
+  - xz=5.6.4
+  - zlib=1.2.13
   - pip:
       - av==14.2.0
       - pyaudio==0.2.14
