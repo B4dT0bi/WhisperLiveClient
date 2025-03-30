@@ -44,7 +44,6 @@ setup(
     install_requires=[
         "PyAudio",
         "av",
-        "scipy",
         "websocket-client"
     ],
     python_requires=">=3.8"

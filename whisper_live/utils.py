@@ -1,7 +1,5 @@
 import os
 import textwrap
-import scipy
-import numpy as np
 import av
 from pathlib import Path
 
