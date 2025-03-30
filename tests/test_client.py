@@ -102,13 +102,16 @@ class TestClientCallbacks(BaseTestCase):
 class TestAudioResampling(unittest.TestCase):
     def test_resample_audio(self):
         original_audio = "../assets/jfk.flac"
+        if not os.path.exists(original_audio):
+            original_audio = "./assets/jfk.flac"
         expected_sr = 16000
         resampled_audio = resample(original_audio, expected_sr)
 
         sr, _ = scipy.io.wavfile.read(resampled_audio)
         self.assertEqual(sr, expected_sr)
 
-        os.remove(resampled_audio)
+        if os.path.exists(resampled_audio):
+            os.remove(resampled_audio)
 
 
 class TestSendingAudioPacket(BaseTestCase):
@@ -131,8 +134,10 @@ class TestTee(BaseTestCase):
     def tearDown(self):
         self.tee.close_all_clients()
         del self.tee
-        os.remove("transcript.srt")
-        os.remove("translation.srt")
+        if os.path.exists("transcript.srt"):
+            os.remove("transcript.srt")
+        if os.path.exists("translation.srt"):
+            os.remove("translation.srt")
         super().tearDown()
 
     def test_invalid_constructor(self):
