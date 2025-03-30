@@ -13,7 +13,7 @@ dependencies:
   - numpy-base=2.0.1
   - openssl=3.0.16
   - pip=25.0
-  - portaudio=19.7.0
+  - portaudio=19.6.0
   - python=3.11.11
   - readline=8.2
   - scipy=1.15.2
