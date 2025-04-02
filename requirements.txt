@@ -1,6 +1,6 @@
 PyAudio~=0.2.14
 av~=14.2.0
 websocket-client~=1.8.0
-loguru~=0.7.2
+loguru~=0.7.3
 setuptools~=78.1.0
 numpy~=2.0.2
